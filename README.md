@@ -45,6 +45,10 @@ To create variables, can be done by 2 types.
     - boolean: boolean (true or false).
     - error: use go package errors.New() to create error.
 
+- Func type:
+    - When instaced a variable like a function, variable has func type with all types params and funct return type
+    - Funct can return 2 or more values, its neccessary only intaced the variable quantity equal return quantity. To ignore a return, change name variable by _     
+
 - start values
     - int and float: start as 0.
     - string: start as empty
