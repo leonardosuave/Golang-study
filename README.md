@@ -33,4 +33,20 @@ To create variables, can be done by 2 types.
     - To create two or more variables in same time. 
         Ex: variable1, variable2 := "value1", "value2"
 
-- OBS: It can change var by const and this work like javascript where not allowed change const values.        
+- OBS: It can change var by const and this work like javascript where not allowed change const values.
+
+# Types
+- Basic types: 
+    - int: int, int8, int16, int32 and int64 (int default is by computer system default. Ex computer 64bits, default int64).
+    - uint: uint, uint8, uint16, uint32, uint64 (uint default is by computer system default. Ex computer 64bits, default uint64)
+    - alias: can put a type by alias. int32 = rune and uint8 = byte.
+    - float: float32 or float64 (float default by computer system. Ex computer 64bits, default float64).
+    - string: string.
+    - boolean: boolean (true or false).
+    - error: use go package errors.New() to create error.
+
+- start values
+    - int and float: start as 0.
+    - string: start as empty
+    - boolean: start as false.
+    - error: start as nil (nil === null from javascript)
