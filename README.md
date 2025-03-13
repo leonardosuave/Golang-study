@@ -20,3 +20,17 @@
     - command "go mod tidy"
 
 - To call functions from a imported package, call the last name after the last bar from the "import". Ex: "github.com/badoux/checkmail", call only checkmail.    
+
+# Variables
+To create variables, can be done by 2 types.
+- Write var and the name and type. Ex: var example string = "value"
+    - To create two or more variables in same time. 
+        Ex: var (
+            variable1 string = "value"
+            variable2 number = 8
+        ) 
+- Without var. Ex: example2 := "value". This case the type its take by the value and its not neccessary declair the type like by var.
+    - To create two or more variables in same time. 
+        Ex: variable1, variable2 := "value1", "value2"
+
+- OBS: It can change var by const and this work like javascript where not allowed change const values.        
