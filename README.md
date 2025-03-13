@@ -1,10 +1,10 @@
-# executed files
+# Executed files
 - Every executed files need to have package main, and func main() {}.
 
-# package main
+# Package main
 - its a files group in the same directory and are compiled together.
 
-# module
+# Module
 - The modules are like package.json, where there are all dependencies neccessaries and the module do the files management to interact between 2 or more files, like a module from Angular or NestJS.
 - To create a module file, execute "go mod init module" and will create a go.mod file
 - The command "go build" will compile all code from the application and will create a binarie file "module.exe" and after to run the binarie file execute "./module".
