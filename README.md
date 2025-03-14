@@ -54,3 +54,6 @@ To create variables, can be done by 2 types.
     - string: start as empty
     - boolean: start as false.
     - error: start as nil (nil === null from javascript)
+
+# Operators
+- The operators are equal javascript, but not use 3 equals (===) and havent ternário operator(need to check by if/else)     
