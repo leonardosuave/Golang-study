@@ -56,4 +56,12 @@ To create variables, can be done by 2 types.
     - error: start as nil (nil === null from javascript)
 
 # Operators
-- The operators are equal javascript, but not use 3 equals (===) and havent ternário operator(need to check by if/else)     
+- The operators are equal javascript, but not use 3 equals (===) and havent ternário operator(need to check by if/else)
+
+# Structs
+- The structs are like class, where can create a specific object with a type specific.
+    - To this, create a type "name" struct {"object format"} and put type in each value.
+    - Can declair values like: 
+        - object.value = value;
+        - object := nameStruct{"value", "value2"} - values into {} are in the order declair in the struct
+        - object:= nameStruct{value: "value1"} - When there are optional values, call the key that has values only 
