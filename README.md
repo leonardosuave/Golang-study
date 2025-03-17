@@ -64,4 +64,8 @@ To create variables, can be done by 2 types.
     - Can declair values like: 
         - object.value = value;
         - object := nameStruct{"value", "value2"} - values into {} are in the order declair in the struct
-        - object:= nameStruct{value: "value1"} - When there are optional values, call the key that has values only 
+        - object:= nameStruct{value: "value1"} - When there are optional values, call the key that has values only
+
+# Heritage
+- In GO, not have heritage like TypeScript with extends and type things. But we can reuse a struct into another to not declair equals values.
+    - To this, its neccessary only pass the struct name into another struct like a key without redeclair the type, so this is like a typescript's extends.
