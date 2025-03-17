@@ -84,3 +84,10 @@ To create variables, can be done by 2 types.
     - Ex: var variable2 *int = &variable1 (where variable1 is a int with a value)
 - When print pointer variable, will show the memory address and not variable value attributed
 - To show pointer variable value, pass as *variable2.    
+
+# Map
+- The maps are structure with key: value and are allow only one type value to key and value. If i declair that are string, so only string are allows to create key and values.
+- To create a map. Ex"
+    - user2 := map[string]string {"key": "value"}
+    - string into [] is the type of key and string outside is type value.
+    - OBS: Different than structs, the keys and values need to be declair like "value" when string
