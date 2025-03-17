@@ -75,3 +75,12 @@ To create variables, can be done by 2 types.
     - Arrays: the arrays are fixeds, so we need to declair how many index and the unic type accept. After i can not push a new value, only change a exist index by another same type value.
     - Slices: the slices are flixibler than arrays, so i can create a slice with x indexs and after push a new value without error (need to be same type).
     - OBS: Arrays and Slices are differents, so i can not do operation between then.    
+
+# Pointer
+- The pointer is a variable that save some things memory address (like JS reference when create a new variable with value from another variable and edit the value and automaticly edit original value too)
+- To create a pointer variable, need to be "*type"
+- Default value is "nil"
+- To attribute a value into a pointer variable, the variable attributed need to declair with & beforer variable name.
+    - Ex: var variable2 *int = &variable1 (where variable1 is a int with a value)
+- When print pointer variable, will show the memory address and not variable value attributed
+- To show pointer variable value, pass as *variable2.    
