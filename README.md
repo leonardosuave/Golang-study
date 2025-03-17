@@ -90,4 +90,8 @@ To create variables, can be done by 2 types.
 - To create a map. Ex"
     - user2 := map[string]string {"key": "value"}
     - string into [] is the type of key and string outside is type value.
-    - OBS: Different than structs, the keys and values need to be declair like "value" when string
+    - OBS: Different than structs, the keys and values need to be declair like "value" when string.
+
+# Control Structure
+- The control structures are if/elses used to control a flow.
+- Its possible create a variable directtly in the if line and this variable will be avaliable only to the if/else block that was created.
