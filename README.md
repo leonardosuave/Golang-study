@@ -69,3 +69,9 @@ To create variables, can be done by 2 types.
 # Heritage
 - In GO, not have heritage like TypeScript with extends and type things. But we can reuse a struct into another to not declair equals values.
     - To this, its neccessary only pass the struct name into another struct like a key without redeclair the type, so this is like a typescript's extends.
+
+# Arrays and Slices
+- Go has 2 types to do a list of values, arrays and slices.
+    - Arrays: the arrays are fixeds, so we need to declair how many index and the unic type accept. After i can not push a new value, only change a exist index by another same type value.
+    - Slices: the slices are flixibler than arrays, so i can create a slice with x indexs and after push a new value without error (need to be same type).
+    - OBS: Arrays and Slices are differents, so i can not do operation between then.    
