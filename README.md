@@ -114,3 +114,19 @@ To create variables, can be done by 2 types.
                 "receiveValue" = "value"
         }
         return "receiveValue"        
+
+# For (looping)
+- The for structure is unic, can be written only 1 format, not equal JS.
+- The FOR can be by control variable with increments or by range to looping array/slices
+- Ex:
+    - Increment:
+    for i := 0; i < 10; i++ {
+
+    }
+
+    - Range
+	sliceValues := []string{"some 1", "some 2", "some 3", "some 4", "some 5"}
+    for i, value := range sliceValues {
+
+    }
+    - OBS: To range, need to declar the 2 params (index, value). If want only value, declair index as _   
