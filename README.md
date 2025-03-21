@@ -95,3 +95,22 @@ To create variables, can be done by 2 types.
 # Control Structure
 - The control structures are if/elses used to control a flow.
 - Its possible create a variable directtly in the if line and this variable will be avaliable only to the if/else block that was created.
+
+# Switch case
+- The switch work like javascript, but not neccessary put "break" after the case to out switch.
+    - The switch can be done 3 different form:
+        - switch "variable"
+            case "value or conditional":
+                return "value"
+
+        - switch {
+            case "conditional with variable":
+                return "value"
+        }
+
+        var "receiveValue" type
+        switch {
+            case "conditional":
+                "receiveValue" = "value"
+        }
+        return "receiveValue"        
