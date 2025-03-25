@@ -129,4 +129,39 @@ To create variables, can be done by 2 types.
     for i, value := range sliceValues {
 
     }
-    - OBS: To range, need to declar the 2 params (index, value). If want only value, declair index as _   
+    - OBS: To range, need to declar the 2 params (index, value). If want only value, declair index as _  .
+
+# Functions
+- There are a lot of type of functions.
+    - Named return: Functions that declair return variables in the type of function and is not neccessary return the variables
+        - func calculate(n1, n2 int) (sum int, subtraction int) {
+            return 
+        }
+        - Will return the sum and subtraction without do nothing.
+
+    - Variadic: Functions that declair only one params type, but can send a lot of values to this params. Like spreed operator from JS.
+        - func showValues(txt string, n ...int) {
+
+        }
+        - When txt its only a string value and n can be a lot of int values.
+
+    - Anonymous functions: As JS, are functions without names and executed by the instance. The params sended are declair in the end of function.
+
+    - Recursive functions: are functions call yourself - Its not often used.
+
+    - Defer: Are function executed after all another logic. Ex: After all logic and beforer a return.
+
+    - Panic and Recover:
+        - Panic: Its different Erro, Panic kill the programm and nothing is execution after the panic, but beforer its call all defer function.
+        - Recover: Recover its a function that recover everything from a panic function to not kill the application.
+    
+    - Closure
+        - Are function that reference variable outside body(scope)
+
+    - Pointer function
+        - Like as variables, function can received a memory address by reference and change the value. This will reflect in the variable value referenced.
+
+    - Init function
+        - init function is a fisrt function executed in the file. Its executed first than main() and can have 1 init function by file, different than main() that can have only one by package.
+        - Can be used to init a variables or another configuration first the main().  
+
