@@ -163,5 +163,12 @@ To create variables, can be done by 2 types.
 
     - Init function
         - init function is a fisrt function executed in the file. Its executed first than main() and can have 1 init function by file, different than main() that can have only one by package.
-        - Can be used to init a variables or another configuration first the main().  
+        - Can be used to init a variables or another configuration first the main().
+
+    - Method
+        - The methods sare equals functions, but aways associate with something.
+        - To create a method, create a func but before between () declair a variable and struct type referenced and after function name
+            - Ex: func (u user) save() {}.
+        - When call the struct its same that create a intanced from struct and after this variables has access to all structs methods created.
+        - To modify a value existed in the method, use pointer to change value from memory address.    
 
