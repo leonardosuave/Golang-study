@@ -172,3 +172,10 @@ To create variables, can be done by 2 types.
         - When call the struct its same that create a intanced from struct and after this variables has access to all structs methods created.
         - To modify a value existed in the method, use pointer to change value from memory address.    
 
+    - Interfaces
+        - To create a interface, is like struct but declair as interface
+            - Ex: type user interface {}
+        - The interface are used like type, ex a type params from a function. 
+            - When sended a params to the function (struct value), will check if the struct has the interface methods, if yes ok, else not allowed used the function.
+            - So the struct need to have the methods used in the function by the interface params.
+        - To create a generic interface, create interface empty {}.             
