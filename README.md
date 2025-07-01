@@ -178,4 +178,25 @@ To create variables, can be done by 2 types.
         - The interface are used like type, ex a type params from a function. 
             - When sended a params to the function (struct value), will check if the struct has the interface methods, if yes ok, else not allowed used the function.
             - So the struct need to have the methods used in the function by the interface params.
-        - To create a generic interface, create interface empty {}.             
+        - To create a generic interface, create interface empty {}.    
+
+# GOROUTINES
+- GOROUTINES especific a line (ex called function) that not need wait finish to execute next line.
+    - To use, put go before function -> go write("some")      
+
+# WAITGROUP
+- WAITGROUP are group with a goroutines quantity that you specify and the code continue only when execute all goroutines into the waitgroup.
+- Declare what are the goroutines in the waitgroup, specify when finish the goroutine and specify that waitgroup need to wait the count be 0
+- example:
+    - var waitGroup sync.WaitGroup
+    - waitGroup.Add() -> will have 2 goroutines.
+    - waitGroup.Done() -> specify that goroutines finished.
+    - waitGroup.Wait() -> specify that the group need to be 0 to continue the code.       
+
+# CHANNELS
+- CHANNELS are used to communication, receiving or sending datas, syncing the goroutines.
+- channel := make(chan string)
+    - channel <- value (send value to channel)
+    - <-channel (channel received value; its same to say that need to wait channel receive a value to continue the code)
+    - IMPORTANT: If channel is waitting receive value but not receive, will generate a deadlock. So need to close the channel correctly to avoid it.
+        - close(channel)
