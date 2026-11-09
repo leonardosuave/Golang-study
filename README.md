@@ -14,9 +14,9 @@
 
     - This work like Public, Private and Protected.
 
-- Install package from a reposItory
+- Install package from a reposItory:
     - command "go get link". Obs: without https
-- Removed package from a repository not used    
+- Removed package from a repository not used:  
     - command "go mod tidy"
 
 - To call functions from a imported package, call the last name after the last bar from the "import". Ex: "github.com/badoux/checkmail", call only checkmail.    
