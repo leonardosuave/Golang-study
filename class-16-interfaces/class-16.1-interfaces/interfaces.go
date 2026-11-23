@@ -31,10 +31,22 @@ func (v circle) area() float64 {
 	return math.Pi * math.Pow(v.radius, 2)
 }
 
+type triangle struct {
+	base   float64
+	height float64
+}
+
+func (v triangle) area() float64 {
+	return (v.base * v.height) / 2
+}
+
 func main() {
 	squareDimension := square{10, 5}
 	calculateArea(squareDimension)
 
 	circleDimension := circle{10}
 	calculateArea(circleDimension)
+
+	triangleDimension := triangle {10, 5}
+	calculateArea(triangleDimension)
 }

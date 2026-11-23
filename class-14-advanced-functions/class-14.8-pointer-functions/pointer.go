@@ -16,6 +16,6 @@ func main() {
 	fmt.Println(n, value1)
 	fmt.Println()
 	nPointer := 20
-	changePointerSignal(&nPointer) //&nPointer is the memory address passed by reference 
+	changePointerSignal(&nPointer) // &nPointer is the memory address passed by reference
 	fmt.Println(nPointer)
 }

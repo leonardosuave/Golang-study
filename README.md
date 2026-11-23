@@ -166,7 +166,7 @@ To create variables, can be done by 2 types.
         - Can be used to init a variables or another configuration first the main().
 
     - Method
-        - The methods sare equals functions, but aways associate with something.
+        - The methods are equals functions, but aways associate with something.
         - To create a method, create a func but before between () declair a variable and struct type referenced and after function name
             - Ex: func (u user) save() {}.
         - When call the struct its same that create a intanced from struct and after this variables has access to all structs methods created.
@@ -200,3 +200,6 @@ To create variables, can be done by 2 types.
     - <-channel (channel received value; its same to say that need to wait channel receive a value to continue the code)
     - IMPORTANT: If channel is waitting receive value but not receive, will generate a deadlock. So need to close the channel correctly to avoid it.
         - close(channel)
+
+# CHANNELS WITH BUFFER
+- It's allowed defined how many buffer(values) will have in the channel and only will have deadlock if buffer quantity is full      
