@@ -38,6 +38,16 @@ func main() {
 		fmt.Println(index, string(value)) // If not pass string(value), will show the ASC table number
 	}
 
+	type user2Struct struct {
+		name string
+		nick string
+	}
+
+	user2 := user2Struct {"Leonardo", "Leo"}
+	for _, value := range user2.name {
+		fmt.Println(string(value))
+	}
+
 	user := map[string]string {
 		"name": "Leonardo",
 		"nick": "Leo",

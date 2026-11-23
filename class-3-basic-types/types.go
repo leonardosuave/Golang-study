@@ -35,7 +35,7 @@ func main() {
 
 	//	To int32 and uint8, can declar the type with another name
 	//	int32 = rune
-	// uint8 = 
+	// uint8 = byte
 	var number5 rune = 855555
 	var number6 byte = 85
 	fmt.Println(number5)

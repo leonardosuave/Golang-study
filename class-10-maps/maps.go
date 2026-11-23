@@ -38,6 +38,7 @@ func main() {
 			"street": "Street 1",
 			"district": "District 1",
 	}
+	user2["phone"] int = 123
 	fmt.Println(user2)
 	fmt.Println(user2["address"]["street"])
 }
