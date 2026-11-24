@@ -203,3 +203,8 @@ To create variables, can be done by 2 types.
 
 # CHANNELS WITH BUFFER
 - It's allowed defined how many buffer(values) will have in the channel and only will have deadlock if buffer quantity is full      
+
+# CONCURRENCY PATTERNS
+- worker pools: It's like a task's queue and you take independent itens from the queue. So need to open more routine to run independent itens from the queue, but it's limited by cores of machine
+- generate: It's a function that incapsule a goroutine and delivery to us. The func will return <- chan type AND the variable will received value from the func, ex: channel := write("some"), <-channel (to see channel value returned)
+- multiplexing: Unify two or more channel in one channel. Ex: one func receive 2 channels as parameters and return only one channel with data modify by the 2 channels parameters data.
