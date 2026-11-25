@@ -1,0 +1,21 @@
+[
+    {
+        "firstName": "John",
+        "secondName": "Doe",
+        "age": 30,
+        "graduation": [
+            "Bachelor's Degree",
+            "Master's Degree"
+        ]
+    },
+    {
+        "firstName": "Tassi",
+        "secondName": "Pinhe",
+        "age": 33,
+        "graduation": [
+            "Bachelor's Degree",
+            "Master's Degree",
+            "Doctor's Degree"
+        ]
+    }
+]
