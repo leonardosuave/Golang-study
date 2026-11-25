@@ -2,11 +2,13 @@ package main
 
 import (
 	"encoding/json"
+	"html/template"
 	"log"
 	"net/http"
 	"os"
 )
 
+var templates  *template.Template
 type person struct {
 	FirstName  string   `json:"firstName"`
 	SecondName string   `json:"secondName"`
@@ -18,10 +20,24 @@ func home(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Hello World!")) // Its necessary to deliver in byte slice format.
 }
 
+func homepage(w http.ResponseWriter, r *http.Request) {
+
+	templates = template.Must(template.ParseGlob("*.html")) // will take all the html files in the current directory and parse them into a template
+
+	user := person{
+		FirstName:  "Leonardo",
+		SecondName: "Suave",
+		Age:        30,
+		Graduation: []string{"Bachelor's Degree", "Master's Degree"}}
+
+	w.WriteHeader(http.StatusOK)
+	templates.ExecuteTemplate(w, "home.html", user) // Execute the template and write it to the response writer (nil (parameter 3) can be datas to pass to html file)
+}	
+
 func user(w http.ResponseWriter, r *http.Request) {
 
 	// create a person struct and return it as json
-	users := person{
+	user := person{
 		FirstName:  "John",
 		SecondName: "Doe",
 		Age:        30,
@@ -31,7 +47,7 @@ func user(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 
 	// Encode the person struct to json and write it to the response writer
-	if err := json.NewEncoder(w).Encode(users); err != nil {
+	if err := json.NewEncoder(w).Encode(user); err != nil {
 		log.Println("Erro ao retornar JSON:", err)
 	}
 }
@@ -64,6 +80,8 @@ func main() {
 
 	// r is a request and w is a response writer. The request is sent by the client and the response is sent by the server.
 	http.HandleFunc("/home", home)
+
+	http.HandleFunc("/homepage", homepage)
 
 	http.HandleFunc("/user", user)
 
